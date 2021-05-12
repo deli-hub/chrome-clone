@@ -14,7 +14,7 @@ function genRandom() {
 
 function paintImage(imgNumber) {
     const image = new Image();
-    image.src = `/chrome-clone/src/images/wallpaper${imgNumber}.jpg`;
+    image.src = `../images/wallpaper${imgNumber}.jpg`;
     image.classList.add('bgImage');
     body.prepend(image);
 }
