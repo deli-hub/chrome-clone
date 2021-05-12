@@ -1,0 +1,18 @@
+.form,
+.hiding {
+    display: none;
+}
+
+.form,
+.greetings {
+    font-size: 4.0rem;
+    margin-bottom: 20px;
+}
+
+.showing {
+    display: block;
+}
+
+#askName{
+    text-align: center;
+}

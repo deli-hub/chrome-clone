@@ -40,24 +40,25 @@ function handleSubmit(event) {
  * @param {} text 
  */
 function paintToDo(text) {
-    const newLi = document.createElement('li');
-    const delBtn = document.createElement('button');
+    const todo = document.createElement('li');
+    const delBtn = document.createElement('span');
     newId = toDos.length + 1;
 
+    todo.id = newId;
     delBtn.innerText = '❌';
     delBtn.addEventListener('click', deleteToDo);
 
-    const span = document.createElement('span');
-    span.innerText = text;
+    const label = document.createElement('label');
+    label.innerText = text;
     
-    newLi.appendChild(span);
-    newLi.appendChild(delBtn);
-    newLi.id = newId; 
+    todo.appendChild(delBtn);
+    todo.appendChild(label);
 
     // 각 elem에 요소를 추가해주고 마지막으로 한 줄로 형성된 요소를 추가해준다.
-    toDoList.appendChild(newLi);
+    toDoList.appendChild(todo);
     saveToDoArray(text);
     saveToDos();
+    toDoList.scrollTo(0, toDoList.scrollHeight);
 }
 
 /**

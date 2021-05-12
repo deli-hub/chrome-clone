@@ -1,0 +1,11 @@
+.js-clock{
+    top: 30%;
+}
+
+#clock {
+    font-size: 10em;
+    /* font-size: xx-large; */
+    /* font-weight: bold; */
+    /* transition ease-in-out은 transition의 변화가 천천히 됨..?
+    transition: color 0.5s ease-in-out;*/
+}
