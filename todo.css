@@ -27,11 +27,15 @@ li {
     margin-bottom: 4px;
     width: 100em;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .listView {
     width:auto;
     height:150px;
     overflow: hidden;
+}
+
+.list > li > span:hover {
+    cursor: pointer;
 }
